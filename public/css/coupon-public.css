@@ -1,0 +1,163 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.status-success {
+  color: #00a32a !important;
+}
+
+.status-warning {
+  color: #dba617 !important;
+}
+
+.status-error {
+  color: #d63638 !important;
+}
+
+.status-info {
+  color: #72aee6 !important;
+}
+
+.oms-coupon-wrapper {
+  box-sizing: content-box;
+  position: relative;
+  width: 280px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 0px #b5b5b5;
+  background: #f9f9f9;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.oms-coupon-wrapper.oms-coupon-disable {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.oms-coupon-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.oms-coupon-code {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #ff5722;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.oms-coupon-discount {
+  margin-top: 0.8em;
+  font-size: 0.8em;
+  color: #ff7d14;
+}
+
+.oms-coupon-remaining {
+  font-size: 0.5em;
+  align-self: flex-end;
+  margin-right: 10px;
+  color: silver;
+  font-weight: 300;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+
+.oms-coupon-remaining strong {
+  color: initial;
+}
+
+.oms-coupon-save {
+  width: 50px;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  border-left: dashed 1px;
+  padding-left: 10px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.oms-coupon-save-btn {
+  cursor: pointer;
+  background: #ff5722 !important;
+  border: 1px solid #ff4308 !important;
+  color: #fff !important;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 1;
+  outline: 0 none;
+  display: block;
+}
+
+.oms-coupon-save-btn:focus,
+.oms-coupon-save-btn:hover {
+  background: #c7431b !important;
+  border-color: #b82e03 !important;
+}
+
+.oms-coupon-save-btn:active {
+  background: #8a2f13 !important;
+  border-color: #6e1b01 !important;
+}
+
+.oms-coupon-save-btn:disabled {
+  cursor: not-allowed;
+  background: #353535 !important;
+  border-color: #131313 !important;
+}
+
+.oms-coupon-disable .oms-coupon-timer,
+.logged-in .oms-coupon-nopriv,
+.oms-coupon-user {
+  display: none;
+}
+
+.logged-in .oms-coupon-user {
+  display: block;
+}
+
+.oms-coupon-timer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(251, 100, 63);
+  background: radial-gradient(
+    circle,
+    rgba(251, 100, 63, 1) 0%,
+    rgba(252, 149, 70, 1) 100%
+  );
+  color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+}
+
+.oms-coupon-expire {
+  position: absolute;
+  transform: translateY(25px);
+  font-size: 0.7em;
+  color: #f93939;
+}
